@@ -16,14 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
-Route::view('/informasi', 'admin.informasi', ['type_menu' => 'informasi'])->name('informasi');
 
 
 Route::resource('produk', ProdukController::class);
 Route::resource('pembuat', PembuatController::class);
 Route::resource('penjualan', PenjualanController::class);
 
+Route::view('/', 'home')->name('home');
+Route::view('/informasi', 'admin.informasi', ['type_menu' => 'informasi'])->name('informasi');
 Route::view('/tim', 'tim')->name('tim');
 Route::view('/login', 'login')->name('login');
 
