@@ -17,11 +17,9 @@ return new class extends Migration
             $table->text('deskripsi_produk');
             $table->text('gambar_produk');
             $table->string('status_produk')->default('belum_terjual');
-            $table->bigInteger('stok');
             $table->bigInteger('harga_jual');
-            $table->bigInteger('biaya');
+            $table->bigInteger('biaya_pembuatan');
             $table->bigInteger('keuntungan')->nullable();
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }

@@ -13,13 +13,10 @@ return new class extends Migration
     {
         Schema::create('pembuats', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_produk');
-            $table->text('deskripsi_produk');
-            $table->text('gambar_produk');
-            $table->string('status_produk')->default('belum_terjual');
-            $table->bigInteger('stok');
-            $table->bigInteger('harga_jual');
-            $table->bigInteger('keuntungan')->nullable();
+            $table->bigInteger('keuntungan_didapat');
+            $table->bigInteger('biaya_dikeluarkan');
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('produk_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }

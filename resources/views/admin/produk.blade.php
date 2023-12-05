@@ -181,8 +181,16 @@
                         <textarea class="form-control" data-height="150" ></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="inputAddress">Gambar Produk</label>
-                        <input type="file" class="form-control" id="inputAddress">
+                        <label for="gambarProduk">Gambar Produk</label>
+                        <input type="file" class="form-control" id="gambarProduk">
+                    </div>
+                    <div class="form-group">
+                        <label for="hargaJual">Harga Jual</label>
+                        <input type="number" class="form-control" id="hargaJual">
+                    </div>
+                    <div class="form-group">
+                        <label for="biayaPembuatan">Biaya Pembuatan</label>
+                        <input type="number" class="form-control" id="biayaPembuatan">
                     </div>
                 </div>
                 <div class="modal-footer bg-whitesmoke br">
