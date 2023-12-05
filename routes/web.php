@@ -24,4 +24,8 @@ Route::resource('produk', ProdukController::class);
 Route::resource('pembuat', PembuatController::class);
 Route::resource('penjualan', PenjualanController::class);
 
+Route::view('/tim', 'tim')->name('tim');
+Route::view('/login', 'login')->name('login');
+
+
 Route::get('/dashboard', [ProdukController::class, 'dashboard'])->name('dashboard');

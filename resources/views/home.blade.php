@@ -32,7 +32,7 @@
                     <a href="{{ route('login') }}" class="mt-5 inline-block rounded-md border border-transparent bg-red-500 px-8 py-3 text-center text-white font-medium hover:bg-indigo-700">Masuk</a>
             </div>
             <div class="flex items-center space-x-6 lg:space-x-8">
-                    <img src="{{URL::asset('assets/img/tokoupro.png')}}" alt="">
+                    <img src="{{URL::asset('img/tokoupro.png')}}" alt="">
              </div>
         </div>
 
