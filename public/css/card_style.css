@@ -1,0 +1,6 @@
+.list-produk {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr) !important;
+    gap: .5rem;
+}
